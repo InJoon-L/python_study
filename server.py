@@ -1,9 +1,9 @@
 import socket
 from _thread import *
-import sys
+import config as cf
 
-server = "192.168.1.23"
-port = 5555
+server = cf.Config.ip
+port = cf.Config.port
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
